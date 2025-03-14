@@ -1,4 +1,3 @@
-
 data "aws_db_instance" "example" {
     provider = aws.secondary
   db_instance_identifier = "book-rds"
