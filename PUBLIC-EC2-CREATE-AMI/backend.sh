@@ -39,3 +39,11 @@ node -v
 npm -v
 yarn -v
 pm2 -v
+
+
+
+#Give these commands into terminal
+#o	npm install
+#o	npm install dotenv
+#o	sudo pm2 start index.js --name "backendApi"
+#o	sudo pm2 list

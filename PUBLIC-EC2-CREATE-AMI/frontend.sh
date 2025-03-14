@@ -30,3 +30,11 @@ yarn set version stable
 
 # Install PM2 globally using Yarn
 yarn global add pm2
+
+
+
+#Give these commmands into terminal
+#o	npm install
+#o	npm run build
+#o	ls
+#o	sudo cp -r build/* /var/www/html
