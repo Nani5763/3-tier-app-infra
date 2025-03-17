@@ -3,6 +3,9 @@
 # Update the system
 sudo yum update -y
 
+#install git
+sudo yum install git -y 
+
 # Remove existing Node.js and NPM versions (if needed)
 sudo yum remove -y nodejs npm
 

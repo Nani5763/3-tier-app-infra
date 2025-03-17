@@ -3,6 +3,9 @@
 # Update the system
 sudo yum update -y
 
+#install git
+sudo yum install git -y
+
 # Install Apache
 sudo yum install -y httpd
 
