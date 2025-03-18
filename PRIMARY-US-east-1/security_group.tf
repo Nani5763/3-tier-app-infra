@@ -178,14 +178,14 @@ resource "aws_security_group" "book-rds-sg" {
   name        = "book-rds-sg"
   description = "Allow inbound "
   vpc_id      = aws_vpc.three-tier.id
-  depends_on = [ aws_vpc.three-tier, aws_security_group.backend-server-sg]
+  depends_on = [ aws_vpc.three-tier]
 
  ingress {
     description     = "mysql/aroura"
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    security_groups = [ aws_security_group.backend-server-sg.id ]
   
  }
   egress {
